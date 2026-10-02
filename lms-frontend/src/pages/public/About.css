@@ -1,0 +1,484 @@
+/* =================================
+   About Page
+================================= */
+
+.about-page {
+  width: 100%;
+}
+
+
+/* =================================
+   About Hero
+================================= */
+
+.about-hero {
+  padding: 100px 24px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eff6ff,
+      #ffffff
+    );
+}
+
+.about-hero-container {
+  max-width: 850px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.about-label {
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  color: #2563eb;
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.about-hero h1 {
+  margin-bottom: 22px;
+
+  font-size: clamp(40px, 5vw, 60px);
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+
+  color: #111827;
+}
+
+.about-hero h1 span {
+  color: #2563eb;
+}
+
+.about-hero p {
+  max-width: 720px;
+  margin: 0 auto;
+
+  font-size: 17px;
+  line-height: 1.8;
+
+  color: #6b7280;
+}
+
+
+/* =================================
+   Common Container
+================================= */
+
+.about-section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* =================================
+   Mission
+================================= */
+
+.about-mission {
+  padding: 100px 24px;
+
+  background-color: #ffffff;
+}
+
+.about-mission-content {
+  max-width: 650px;
+}
+
+.about-mission-content h2 {
+  margin-bottom: 20px;
+
+  font-size: 38px;
+  line-height: 1.2;
+
+  color: #111827;
+}
+
+.about-mission-content p {
+  margin-bottom: 15px;
+
+  font-size: 15px;
+  line-height: 1.8;
+
+  color: #6b7280;
+}
+
+.about-mission .about-section-container {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  align-items: center;
+  gap: 80px;
+}
+
+.about-mission-card {
+  padding: 40px;
+
+  border-radius: 18px;
+
+  background-color: #eff6ff;
+
+  text-align: center;
+}
+
+.about-mission-card svg {
+  margin-bottom: 20px;
+
+  color: #2563eb;
+}
+
+.about-mission-card h3 {
+  margin-bottom: 10px;
+
+  font-size: 23px;
+
+  color: #111827;
+}
+
+.about-mission-card p {
+  font-size: 14px;
+  line-height: 1.7;
+
+  color: #6b7280;
+}
+
+
+/* =================================
+   Features
+================================= */
+
+.about-features {
+  padding: 100px 24px;
+
+  background-color: #f8fafc;
+}
+
+.about-heading {
+  max-width: 700px;
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+.about-heading h2 {
+  margin-bottom: 15px;
+
+  font-size: 38px;
+  line-height: 1.2;
+
+  color: #111827;
+}
+
+.about-heading p {
+  font-size: 16px;
+  line-height: 1.7;
+
+  color: #6b7280;
+}
+
+.about-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.about-feature-card {
+  padding: 30px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  background-color: #ffffff;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.about-feature-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.07);
+}
+
+.about-feature-icon {
+  width: 52px;
+  height: 52px;
+
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background-color: #dbeafe;
+  color: #2563eb;
+}
+
+.about-feature-card h3 {
+  margin-bottom: 10px;
+
+  font-size: 18px;
+
+  color: #111827;
+}
+
+.about-feature-card p {
+  font-size: 14px;
+  line-height: 1.7;
+
+  color: #6b7280;
+}
+
+
+/* =================================
+   Learning Experience
+================================= */
+
+.learning-experience {
+  padding: 100px 24px;
+
+  background-color: #ffffff;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+}
+
+.experience-content h2 {
+  margin-bottom: 18px;
+
+  font-size: 38px;
+  line-height: 1.2;
+
+  color: #111827;
+}
+
+.experience-content > p {
+  margin-bottom: 25px;
+
+  font-size: 15px;
+  line-height: 1.8;
+
+  color: #6b7280;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.experience-list div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  color: #374151;
+}
+
+.experience-list svg {
+  width: 20px;
+  height: 20px;
+
+  color: #2563eb;
+}
+
+
+/* Experience Card */
+
+.experience-card {
+  padding: 35px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+
+  background-color: #f8fafc;
+}
+
+.experience-card-icon {
+  width: 55px;
+  height: 55px;
+
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background-color: #dbeafe;
+  color: #2563eb;
+}
+
+.experience-card h3 {
+  margin-bottom: 25px;
+
+  font-size: 22px;
+
+  color: #111827;
+}
+
+.journey-step {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  padding: 15px 0;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.journey-step:last-child {
+  border-bottom: none;
+}
+
+.journey-step span {
+  font-size: 13px;
+  font-weight: 700;
+
+  color: #2563eb;
+}
+
+.journey-step p {
+  font-size: 14px;
+  color: #4b5563;
+}
+
+
+/* =================================
+   CTA
+================================= */
+
+.about-cta {
+  padding: 90px 24px;
+
+  background-color: #1d4ed8;
+}
+
+.about-cta-container {
+  max-width: 750px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.about-cta-container h2 {
+  margin-bottom: 15px;
+
+  font-size: 40px;
+
+  color: #ffffff;
+}
+
+.about-cta-container p {
+  margin-bottom: 30px;
+
+  font-size: 17px;
+
+  color: #dbeafe;
+}
+
+.about-cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 13px 22px;
+
+  border-radius: 8px;
+
+  background-color: #ffffff;
+  color: #1d4ed8;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.about-cta-button:hover {
+  background-color: #eff6ff;
+  transform: translateY(-2px);
+}
+
+
+/* =================================
+   Responsive
+================================= */
+
+@media (max-width: 1000px) {
+
+  .about-mission .about-section-container {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .about-mission-content {
+    max-width: none;
+  }
+
+  .about-feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .about-hero {
+    padding: 70px 20px;
+  }
+
+  .about-hero h1 {
+    font-size: 40px;
+  }
+
+  .about-mission,
+  .about-features,
+  .learning-experience {
+    padding: 70px 20px;
+  }
+
+  .about-mission-content h2,
+  .about-heading h2,
+  .experience-content h2 {
+    font-size: 31px;
+  }
+
+  .about-feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-cta {
+    padding: 70px 20px;
+  }
+
+  .about-cta-container h2 {
+    font-size: 32px;
+  }
+
+}

@@ -1,0 +1,423 @@
+.navbar {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 72px;
+  padding: 0 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-logo-icon {
+  width: 30px;
+  height: 30px;
+  color: #2563eb;
+}
+
+.navbar-logo-text {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navbar-link {
+  font-size: 15px;
+  font-weight: 500;
+  color: #4b5563;
+
+  transition: color 0.2s ease;
+}
+
+.navbar-link:hover {
+  color: #2563eb;
+}
+
+/* =========================
+   ACTIONS
+========================= */
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Login */
+
+.navbar-login {
+  padding: 9px 18px;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+
+  transition: background-color 0.2s ease;
+}
+
+.navbar-login:hover {
+  background-color: #f3f4f6;
+}
+
+/* Register */
+
+.navbar-register {
+  padding: 10px 18px;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #ffffff;
+  background-color: #2563eb;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.navbar-register:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+/* =========================
+   PROFILE BUTTON
+========================= */
+
+.profile-wrapper {
+  position: relative;
+}
+
+.profile-button {
+  border: none;
+  background: transparent;
+
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 5px 7px 5px 5px;
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease;
+}
+
+.profile-button:hover {
+  background-color: #f8fafc;
+}
+
+/* =========================
+   AVATAR
+========================= */
+
+.profile-avatar {
+  width: 39px;
+  height: 39px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #2563eb;
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  flex-shrink: 0;
+}
+
+/* =========================
+   USER INFO
+========================= */
+
+.profile-user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+.profile-user-name {
+  max-width: 130px;
+
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.profile-user-role {
+  font-size: 11px;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+/* =========================
+   CHEVRON
+========================= */
+
+.profile-chevron {
+  color: #6b7280;
+
+  transition:
+    transform 0.2s ease;
+}
+
+.profile-chevron-open {
+  transform: rotate(180deg);
+}
+
+/* =========================
+   PROFILE DROPDOWN
+========================= */
+
+.profile-dropdown {
+  position: absolute;
+
+  top: calc(100% + 10px);
+  right: 0;
+
+  width: 285px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+
+  box-shadow:
+    0 15px 35px rgba(15, 23, 42, 0.12);
+
+  overflow: hidden;
+
+  animation: profileDropdownOpen 0.15s ease;
+}
+
+@keyframes profileDropdownOpen {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   DROPDOWN HEADER
+========================= */
+
+.profile-dropdown-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 18px;
+}
+
+.profile-dropdown-avatar {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #2563eb;
+  color: #ffffff;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.profile-dropdown-user {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-dropdown-user strong {
+  font-size: 14px;
+  font-weight: 700;
+  color: #111827;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.profile-dropdown-user span {
+  margin-top: 2px;
+
+  font-size: 12px;
+  color: #6b7280;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* =========================
+   DIVIDER
+========================= */
+
+.profile-dropdown-divider {
+  height: 1px;
+  background: #f1f5f9;
+}
+
+/* =========================
+   MENU ITEMS
+========================= */
+
+.profile-menu-item {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 12px 18px;
+
+  border: none;
+  background: transparent;
+
+  color: #374151;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  text-align: left;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+
+  cursor: pointer;
+}
+
+.profile-menu-item svg {
+  color: #64748b;
+  flex-shrink: 0;
+}
+
+.profile-menu-item:hover {
+  background-color: #f8fafc;
+  color: #2563eb;
+}
+
+.profile-menu-item:hover svg {
+  color: #2563eb;
+}
+
+/* =========================
+   LOGOUT
+========================= */
+
+.profile-logout {
+  color: #dc2626;
+}
+
+.profile-logout svg {
+  color: #dc2626;
+}
+
+.profile-logout:hover {
+  background-color: #fef2f2;
+  color: #dc2626;
+}
+
+.profile-logout:hover svg {
+  color: #dc2626;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  .navbar-container {
+    padding: 0 16px;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-login {
+    display: none;
+  }
+
+  .navbar-logo-text {
+    font-size: 21px;
+  }
+
+  .navbar-register {
+    padding: 9px 14px;
+    font-size: 13px;
+  }
+
+  .profile-user-info {
+    display: none;
+  }
+
+  .profile-button {
+    padding: 3px;
+  }
+
+  .profile-chevron {
+    display: none;
+  }
+
+  .profile-dropdown {
+    right: -5px;
+    width: 270px;
+  }
+}
