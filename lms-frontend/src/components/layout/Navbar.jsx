@@ -21,9 +21,6 @@ function Navbar() {
 
   const profileRef = useRef(null);
 
-  /*
-   * Close profile dropdown when clicking outside
-   */
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -44,9 +41,6 @@ function Navbar() {
     };
   }, []);
 
-  /*
-   * Get first letter of user's name
-   */
   const getInitial = () => {
     if (!user?.name) {
       return "U";
@@ -55,9 +49,6 @@ function Navbar() {
     return user.name.charAt(0).toUpperCase();
   };
 
-  /*
-   * Role-based dashboard
-   */
   const getDashboardPath = () => {
     switch (user?.role) {
       case "ROLE_ADMIN":
@@ -90,9 +81,6 @@ function Navbar() {
     }
   };
 
-  /*
-   * Logout
-   */
   const handleLogout = () => {
     setProfileOpen(false);
 
@@ -105,10 +93,6 @@ function Navbar() {
     <header className="navbar">
       <div className="navbar-container">
 
-        {/* =========================
-            LOGO
-        ========================= */}
-
         <Link to="/" className="navbar-logo">
           <BookOpen className="navbar-logo-icon" />
 
@@ -117,9 +101,6 @@ function Navbar() {
           </span>
         </Link>
 
-        {/* =========================
-            NAVIGATION
-        ========================= */}
 
         <nav className="navbar-links">
 
@@ -146,15 +127,10 @@ function Navbar() {
 
         </nav>
 
-        {/* =========================
-            RIGHT SIDE
-        ========================= */}
-
         <div className="navbar-actions">
 
           {!isAuthenticated ? (
             <>
-              {/* Login */}
               <Link
                 to="/login"
                 className="navbar-login"
@@ -162,7 +138,6 @@ function Navbar() {
                 Login
               </Link>
 
-              {/* Register */}
               <Link
                 to="/register"
                 className="navbar-register"
@@ -175,10 +150,6 @@ function Navbar() {
               className="profile-wrapper"
               ref={profileRef}
             >
-
-              {/* =========================
-                  PROFILE BUTTON
-              ========================= */}
 
               <button
                 type="button"
@@ -223,14 +194,10 @@ function Navbar() {
 
               </button>
 
-              {/* =========================
-                  DROPDOWN
-              ========================= */}
 
               {profileOpen && (
                 <div className="profile-dropdown">
 
-                  {/* Profile Header */}
 
                   <div className="profile-dropdown-header">
 
@@ -254,7 +221,6 @@ function Navbar() {
 
                   <div className="profile-dropdown-divider"></div>
 
-                  {/* Dashboard */}
 
                   <Link
                     to={getDashboardPath()}
@@ -269,8 +235,6 @@ function Navbar() {
                       {getDashboardName()}
                     </span>
                   </Link>
-
-                  {/* Profile Settings */}
 
                   <Link
                     to="/profile"
@@ -288,7 +252,6 @@ function Navbar() {
 
                   <div className="profile-dropdown-divider"></div>
 
-                  {/* Logout */}
 
                   <button
                     type="button"

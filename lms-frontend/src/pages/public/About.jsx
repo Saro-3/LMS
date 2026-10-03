@@ -14,7 +14,6 @@ function About() {
   return (
     <div className="about-page">
 
-      {/* Hero */}
       <section className="about-hero">
         <div className="about-hero-container">
 
@@ -37,8 +36,6 @@ function About() {
         </div>
       </section>
 
-
-      {/* Mission */}
       <section className="about-mission">
 
         <div className="about-section-container">
@@ -85,8 +82,6 @@ function About() {
 
       </section>
 
-
-      {/* What We Provide */}
       <section className="about-features">
 
         <div className="about-section-container">
@@ -181,7 +176,6 @@ function About() {
       </section>
 
 
-      {/* Learning Experience */}
       <section className="learning-experience">
 
         <div className="about-section-container">
@@ -271,7 +265,6 @@ function About() {
       </section>
 
 
-      {/* CTA */}
       <section className="about-cta">
 
         <div className="about-cta-container">

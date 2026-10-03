@@ -73,7 +73,6 @@ function Courses() {
   return (
     <section className="courses-page">
 
-      {/* Hero */}
       <div className="courses-hero">
         <div className="courses-hero-content">
 
@@ -92,11 +91,8 @@ function Courses() {
 
         </div>
       </div>
-
-      {/* Main Content */}
       <div className="courses-container">
 
-        {/* Search */}
         <div className="courses-toolbar">
 
           <div className="courses-search">
@@ -116,7 +112,6 @@ function Courses() {
 
         </div>
 
-        {/* Category Filters */}
         <div className="courses-filters">
 
           {categories.map((category) => (
@@ -137,21 +132,18 @@ function Courses() {
 
         </div>
 
-        {/* Loading */}
         {loading && (
           <div className="courses-message">
             <p>Loading courses...</p>
           </div>
         )}
 
-        {/* Error */}
         {!loading && error && (
           <div className="courses-message error">
             <p>{error}</p>
           </div>
         )}
 
-        {/* Courses */}
         {!loading && !error && (
           <>
             {filteredCourses.length > 0 ? (
@@ -165,7 +157,6 @@ function Courses() {
                     key={course.id}
                   >
 
-                    {/* Course Image */}
                     <div className="course-card-image">
 
                       {course.thumbnailUrl ? (
@@ -182,8 +173,6 @@ function Courses() {
                       )}
 
                     </div>
-
-                    {/* Course Content */}
                     <div className="course-card-content">
 
                       <span className="course-category">

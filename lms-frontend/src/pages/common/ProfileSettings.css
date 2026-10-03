@@ -9,10 +9,6 @@
   margin: 0 auto;
 }
 
-/* =========================
-   BACK LINK
-========================= */
-
 .profile-back-link {
   display: inline-flex;
   align-items: center;
@@ -31,10 +27,6 @@
 .profile-back-link:hover {
   color: #2563eb;
 }
-
-/* =========================
-   HEADER
-========================= */
 
 .profile-settings-header {
   margin-bottom: 28px;
@@ -68,10 +60,6 @@
   font-size: 15px;
 }
 
-/* =========================
-   MAIN CARD
-========================= */
-
 .profile-settings-card {
   background: #ffffff;
 
@@ -83,10 +71,6 @@
 
   overflow: hidden;
 }
-
-/* =========================
-   PROFILE HEADER
-========================= */
 
 .profile-settings-profile {
   display: flex;
@@ -157,19 +141,11 @@
   font-weight: 700;
 }
 
-/* =========================
-   DIVIDER
-========================= */
-
 .profile-settings-divider {
   height: 1px;
 
   background: #e2e8f0;
 }
-
-/* =========================
-   SECTION
-========================= */
 
 .profile-section {
   padding: 28px;
@@ -212,10 +188,6 @@
 
   font-size: 13px;
 }
-
-/* =========================
-   FIELDS
-========================= */
 
 .profile-fields {
   display: grid;
@@ -277,10 +249,6 @@
 .profile-input-wrapper input:read-only {
   cursor: default;
 }
-
-/* =========================
-   SECURITY
-========================= */
 
 .security-card {
   display: flex;
@@ -358,10 +326,6 @@
 
   margin-top: 10px;
 }
-
-/* =========================
-   RESPONSIVE
-========================= */
 
 @media (max-width: 700px) {
 

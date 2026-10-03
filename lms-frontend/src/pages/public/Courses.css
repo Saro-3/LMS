@@ -1,17 +1,9 @@
-/* ================================
-   Courses Page
-================================ */
-
 .courses-page {
   width: 100%;
   min-height: 100vh;
   background-color: #ffffff;
 }
 
-
-/* ================================
-   Hero Section
-================================ */
 
 .courses-hero {
   width: 100%;
@@ -57,20 +49,12 @@
 }
 
 
-/* ================================
-   Main Container
-================================ */
-
 .courses-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 55px 24px 80px;
 }
 
-
-/* ================================
-   Toolbar
-================================ */
 
 .courses-toolbar {
   display: flex;
@@ -119,10 +103,6 @@
 }
 
 
-/* ================================
-   Category Filters
-================================ */
-
 .courses-filters {
   display: flex;
   flex-wrap: wrap;
@@ -157,10 +137,6 @@
 }
 
 
-/* ================================
-   Course Grid
-================================ */
-
 .courses-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -168,9 +144,6 @@
 }
 
 
-/* ================================
-   Course Card
-================================ */
 
 .course-card {
   overflow: hidden;
@@ -189,9 +162,6 @@
 }
 
 
-/* ================================
-   Course Image
-================================ */
 
 .course-card-image {
   width: 100%;
@@ -213,10 +183,6 @@
   object-fit: cover;
 }
 
-
-/* ================================
-   Course Content
-================================ */
 
 .course-card-content {
   padding: 24px;
@@ -247,9 +213,6 @@
 }
 
 
-/* ================================
-   Course Meta
-================================ */
 
 .course-meta {
   display: flex;
@@ -271,9 +234,6 @@
 }
 
 
-/* ================================
-   View Course Button
-================================ */
 
 .course-view-button {
   display: flex;
@@ -297,9 +257,6 @@
 }
 
 
-/* ================================
-   Loading / Error / Empty
-================================ */
 
 .courses-message {
   display: flex;
@@ -325,9 +282,6 @@
 }
 
 
-/* ================================
-   Responsive
-================================ */
 
 @media (max-width: 1000px) {
 

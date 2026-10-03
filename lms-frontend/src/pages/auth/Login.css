@@ -16,8 +16,6 @@
   align-items: center;
 }
 
-/* Left */
-
 .login-info {
   max-width: 520px;
 }
@@ -78,8 +76,6 @@
   font-weight: 700;
 }
 
-/* Card */
-
 .login-card {
   padding: 38px;
   border: 1px solid #e5e7eb;
@@ -102,8 +98,6 @@
   color: #6b7280;
   font-size: 14px;
 }
-
-/* Form */
 
 .login-form-group {
   margin-bottom: 20px;
@@ -164,8 +158,6 @@
   color: #2563eb;
 }
 
-/* Button */
-
 .login-button {
   width: 100%;
   height: 48px;
@@ -191,8 +183,6 @@
   opacity: 0.7;
 }
 
-/* Register */
-
 .login-register {
   margin-top: 25px;
   padding-top: 22px;
@@ -211,8 +201,6 @@
 .login-register a:hover {
   text-decoration: underline;
 }
-
-/* Responsive */
 
 @media (max-width: 850px) {
   .login-container {

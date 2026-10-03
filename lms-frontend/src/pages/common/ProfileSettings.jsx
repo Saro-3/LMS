@@ -37,10 +37,6 @@ function ProfileSettings() {
 
       <div className="profile-settings-container">
 
-        {/* =========================
-            BACK
-        ========================= */}
-
         <Link
           to="/"
           className="profile-back-link"
@@ -48,10 +44,6 @@ function ProfileSettings() {
           <ArrowLeft size={18} />
           Back to Home
         </Link>
-
-        {/* =========================
-            PAGE HEADER
-        ========================= */}
 
         <div className="profile-settings-header">
 
@@ -69,13 +61,8 @@ function ProfileSettings() {
 
         </div>
 
-        {/* =========================
-            PROFILE CARD
-        ========================= */}
-
         <div className="profile-settings-card">
 
-          {/* Profile Header */}
 
           <div className="profile-settings-profile">
 
@@ -103,9 +90,6 @@ function ProfileSettings() {
 
           <div className="profile-settings-divider"></div>
 
-          {/* =========================
-              ACCOUNT INFORMATION
-          ========================= */}
 
           <div className="profile-section">
 
@@ -127,7 +111,6 @@ function ProfileSettings() {
 
             <div className="profile-fields">
 
-              {/* Name */}
 
               <div className="profile-field">
 
@@ -149,8 +132,6 @@ function ProfileSettings() {
 
               </div>
 
-              {/* Email */}
-
               <div className="profile-field">
 
                 <label>
@@ -171,7 +152,6 @@ function ProfileSettings() {
 
               </div>
 
-              {/* Role */}
 
               <div className="profile-field">
 
@@ -193,7 +173,6 @@ function ProfileSettings() {
 
               </div>
 
-              {/* User ID */}
 
               <div className="profile-field">
 
@@ -220,10 +199,6 @@ function ProfileSettings() {
           </div>
 
           <div className="profile-settings-divider"></div>
-
-          {/* =========================
-              ACCOUNT SECURITY
-          ========================= */}
 
           <div className="profile-section">
 

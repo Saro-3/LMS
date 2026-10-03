@@ -3,18 +3,12 @@
   background: #f8fafc;
 }
 
-/* =========================
-   COMMON
-========================= */
 
 .course-details-container {
   width: min(1180px, calc(100% - 40px));
   margin: 0 auto;
 }
 
-/* =========================
-   HERO
-========================= */
 
 .course-details-hero {
   background: linear-gradient(
@@ -49,10 +43,6 @@
   align-items: center;
 }
 
-/* =========================
-   IMAGE
-========================= */
-
 .course-details-image-wrapper {
   width: 100%;
   height: 285px;
@@ -69,9 +59,6 @@
   display: block;
 }
 
-/* =========================
-   MAIN INFO
-========================= */
 
 .course-category-badge {
   display: inline-flex;
@@ -101,9 +88,6 @@
   margin-bottom: 28px;
 }
 
-/* =========================
-   META
-========================= */
 
 .course-meta {
   display: flex;
@@ -138,9 +122,6 @@
   color: #ffffff;
 }
 
-/* =========================
-   ENROLLMENT
-========================= */
 
 .course-enrollment-area {
   margin-top: 10px;
@@ -242,9 +223,6 @@
   }
 }
 
-/* =========================
-   CONTENT
-========================= */
 
 .course-content-section {
   padding: 75px 0;
@@ -292,9 +270,6 @@
   white-space: nowrap;
 }
 
-/* =========================
-   MODULES
-========================= */
 
 .modules-list {
   display: flex;
@@ -357,9 +332,6 @@
   font-size: 13px;
 }
 
-/* =========================
-   EMPTY MODULES
-========================= */
 
 .empty-modules {
   padding: 60px 20px;
@@ -383,9 +355,6 @@
   font-size: 14px;
 }
 
-/* =========================
-   NOT FOUND
-========================= */
 
 .course-not-found {
   min-height: 500px;
@@ -422,9 +391,6 @@
   font-weight: 600;
 }
 
-/* =========================
-   LOADING
-========================= */
 
 .course-details-loading {
   min-height: 600px;
@@ -445,9 +411,6 @@
   animation: spin 0.8s linear infinite;
 }
 
-/* =========================
-   BOTTOM CTA
-========================= */
 
 .course-bottom-cta {
   background: #eff6ff;
@@ -502,9 +465,6 @@
   transform: none;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
 
 @media (max-width: 900px) {
 

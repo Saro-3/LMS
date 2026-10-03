@@ -49,10 +49,6 @@ function Login() {
 
       const data = response.data;
 
-      /*
-       * Your backend login response should contain
-       * the JWT token and user information.
-       */
       const token =
         data.token ||
         data.accessToken ||
@@ -103,7 +99,6 @@ function Login() {
 
       <div className="login-container">
 
-        {/* Left Side */}
         <div className="login-info">
 
           <div className="login-brand">
@@ -148,7 +143,6 @@ function Login() {
 
         </div>
 
-        {/* Login Card */}
         <div className="login-card">
 
           <div className="login-card-header">
@@ -163,7 +157,6 @@ function Login() {
 
           <form onSubmit={handleSubmit}>
 
-            {/* Email */}
             <div className="login-form-group">
 
               <label htmlFor="email">
@@ -187,7 +180,6 @@ function Login() {
 
             </div>
 
-            {/* Password */}
             <div className="login-form-group">
 
               <label htmlFor="password">
@@ -231,7 +223,6 @@ function Login() {
 
             </div>
 
-            {/* Submit */}
             <button
               type="submit"
               className="login-button"

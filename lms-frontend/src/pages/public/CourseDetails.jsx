@@ -133,8 +133,6 @@ function CourseDetails() {
 
     toast.success("Course learning module coming next.");
 
-    // Student learning page will be connected later.
-    // navigate(`/student/courses/${courseId}/learn`);
   };
 
   if (loading) {
@@ -200,8 +198,6 @@ function CourseDetails() {
           </Link>
 
           <div className="course-details-hero-grid">
-
-            {/* Course Image */}
             <div className="course-details-image-wrapper">
               <img
                 src={thumbnail}
@@ -209,8 +205,6 @@ function CourseDetails() {
                 className="course-details-image"
               />
             </div>
-
-            {/* Course Main Information */}
             <div className="course-details-main">
 
               <span className="course-category-badge">
@@ -254,8 +248,6 @@ function CourseDetails() {
                 </div>
 
               </div>
-
-              {/* Enrollment Area */}
               <div className="course-enrollment-area">
 
                 {enrollment ? (
@@ -326,7 +318,6 @@ function CourseDetails() {
         </div>
       </section>
 
-      {/* Course Content */}
       <section className="course-content-section">
         <div className="course-details-container">
 
@@ -407,7 +398,6 @@ function CourseDetails() {
         </div>
       </section>
 
-      {/* Bottom CTA */}
       <section className="course-bottom-cta">
         <div className="course-details-container">
 
